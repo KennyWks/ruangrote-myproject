@@ -104,9 +104,6 @@
                         <a class="page-scroll" href="#feature">Beranda</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Profil Desa</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#about-us">Pengumuman</a>
                     </li>
                     <li>
@@ -116,7 +113,7 @@
                         <a class="page-scroll" href="#team">Pengaduan</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Produk Hukum</a>
+                        <a class="page-scroll" href="#pricing">Profil Desa</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
