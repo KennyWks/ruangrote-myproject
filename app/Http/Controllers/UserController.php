@@ -8,10 +8,18 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function getIndex(){
-        $users = DB::table('superadmin')->get();
+        //$users = DB::table('superadmin')->get();
         
-        echo $users;
-
+        //echo $users;
+        //$superadmin = DB::table('superadmin')->get();
+        //echo $superadmin;
+        
+        return view('beranda');
+        
+        return view('beranda');
         //return view('welcome');
+    }
+    public function portofolio(){
+        echo "ini portofolio";
     }
 }

@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'UserController@getIndex');
+Route::get('/portofolio', 'UserController@portofolio');
