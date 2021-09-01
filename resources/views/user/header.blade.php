@@ -91,7 +91,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Fame</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Ruang Rote</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,31 +101,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#feature">Feature</a>
+                        <a class="page-scroll" href="#feature">Beranda</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/portofolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Profil Desa</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about-us">About</a>
+                        <a class="page-scroll" href="#about-us">Pengumuman</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#service">Services</a>
+                        <a class="page-scroll" href="#service">Ruang ASA</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#team">Pengaduan</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Pricing</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#latest-news">Latest News</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#testimonial">Testimonials</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#partner">Lover</a>
+                        <a class="page-scroll" href="#pricing">Produk Hukum</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>

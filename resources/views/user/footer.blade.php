@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h3>Contact With Us</h3>
+                        <h3>Hubungi Kami</h3>
                         <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate</p>
                     </div>
                 </div>
@@ -14,21 +14,33 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Instansi *" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="tel" class="form-control" placeholder="Kategori *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="text" class="form-control" placeholder="Nama *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Subjek *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Isi *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Tag *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -44,7 +56,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-contact-info">
-                        <h4>Contact info</h4>
+                        <h4>Informasi Kontak</h4>
                         <ul>
                             <li><strong>E-mail :</strong> your-email@mail.com</li>
                             <li><strong>Phone :</strong> +8801-6778776</li>
@@ -55,7 +67,7 @@
                 </div>
                 <div class="col-md-4 col-md-offset-4">
                     <div class="footer-contact-info">
-                        <h4>Working Hours</h4>
+                        <h4>Jam  Kerja</h4>
                         <ul>
                             <li><strong>Mon-Wed :</strong> 9 am to 5 pm</li>
                             <li><strong>Thurs-Fri :</strong> 12 pm to 10 pm</li>
@@ -70,7 +82,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
-                        <span class="copyright">Copyright &copy; <a href="http://guardiantheme.com">GuardinTheme</a> 2015</span>
+                        <span class="copyright">Copyright &copy; <a href="#">ESC17</a> 2021</span>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <div class="footer-social text-center">

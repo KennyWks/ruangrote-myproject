@@ -143,7 +143,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3>Profil Desa</h3>
+                            <h3>Our Portfolio</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>                        
                     </div>
@@ -262,7 +262,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title text-center">
-                            <h3>Pengumuman</h3>
+                            <h3>About Us</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>
                 </div>
@@ -410,7 +410,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3>Ruang ASA</h3>
+                            <h3>Our Services</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>
                     </div>
@@ -554,7 +554,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title text-center">
-                            <h3>Pengaduan</h3>
+                            <h3>Our Team</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>
                 </div>
@@ -681,7 +681,7 @@
                 <div class="col-md-12">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3>Produk Hukum</h3>
+                            <h3>Our Pricing Plan</h3>
                             <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>
                     </div>
@@ -844,6 +844,206 @@
     <!-- End Pricing Table Section -->
     
     
-  
+    
+    <!-- Start Latest News Section -->
+    <section id="latest-news" class="latest-news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h3>Latest News</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest-news">
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-01.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>31</strong> <br>Dec , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-02.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>17</strong> <br>Feb , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-03.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-01.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-02.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="latest-post">
+                            <img src="images/about-03.jpg" class="img-responsive" alt="">
+                            <h4><a href="#">Standard Post with Image</a></h4>
+                            <div class="post-details">
+                                <span class="date"><strong>08</strong> <br>Aug , 2014</span>
+                                
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Latest News Section -->
+
+
+
+    
+    
+    
+    <!-- Start Testimonial Section -->
+    <div id="testimonial" class="testimonial-section">
+        <div class="container">
+            <!-- Start Testimonials Carousel -->
+            <div id="testimonial-carousel" class="testimonials-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonials item">
+                    <div class="testimonial-content">
+                        <img src="images/testimonial/face_1.png" alt="" >
+                        <div class="testimonial-author">
+                            <div class="author">John Doe</div>
+                            <div class="designation">Organization Founder</div>
+                        </div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br> laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonials item">
+                    <div class="testimonial-content">
+                        <img src="images/testimonial/face_2.png" alt="" >
+                        <div class="testimonial-author">
+                            <div class="author">Jane Doe</div>
+                            <div class="designation">Lead Developer</div>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia<br> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonials item">
+                    <div class="testimonial-content">
+                        <img src="images/testimonial/face_3.png" alt="" >
+                        <div class="testimonial-author">
+                            <div class="author">John Doe</div>
+                            <div class="designation">Honorable Customer</div>
+                        </div>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit<br> anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Testimonials Carousel -->
+        </div>
+    </div>
+    <!-- End Testimonial Section -->
+    
+    
+
+    <!-- Clients Aside -->
+    <section id="partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h3>Our Honorable Partner</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="clients">
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/themeforest.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/microlancer.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/themeforest.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/microlancer.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="...">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
     @include('user.footer')
