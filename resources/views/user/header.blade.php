@@ -110,13 +110,10 @@
                         <a class="page-scroll" href="#service">Ruang ASA</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Pengaduan</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#pricing">Profil Desa</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Pengaduan</a>
                     </li>
                 </ul>
             </div>

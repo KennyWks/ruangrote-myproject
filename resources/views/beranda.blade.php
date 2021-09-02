@@ -79,39 +79,36 @@
         <section id="feature" class="feature-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="feature">
-                            <i class="fa fa-magic"></i>
+                            <i class="fa fa-bullhorn"></i>
                             <div class="feature-content">
-                                <h4>Web Design</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+                                <h4>Pengumuman</h4>
+                                <h4>*MINIMAL 3 TERATAS*</h4>
+                                <div class="alert alert-danger" role="alert">
+                                    <div class="row">
+                                        <div class="col-sm-8 text-left" style="font-italic"> Judul</div>
+                                        <div class="col-sm-4 text-right">Tanggal</div>
+                                    </div>
+                                    <hr>
+                                    The face and throat are pinkish, the head and back are brown, and the rump is blue. The brightly contrasting light and dark blue markings on the wings and tail 
+                                    <a href="#about-us">More</a>
+                                </div>
                             </div>
                         </div>
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="feature">
-                            <i class="fa fa-gift"></i>
+                            <i class="fa fa-comment"></i>
                             <div class="feature-content">
-                                <h4>Graphics Design</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-wordpress"></i>
-                            <div class="feature-content">
-                                <h4>Wordpress Theme</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                            </div>
-                        </div>
-                    </div><!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="feature">
-                            <i class="fa fa-plug"></i>
-                            <div class="feature-content">
-                                <h4>Wordpress Plugin</h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+                                <h4>Pengaduan</h4>
+                                <h4>*MINIMAL 3 TERATAS*</h4>
+                                <div class="alert alert-success" role="alert">
+                                <p>Judul</p>
+                                    <hr>
+                                    The face and throat are pinkish, the head and back are brown, and the rump is blue. The brightly contrasting light and dark blue markings on the wings and tail 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -430,132 +427,7 @@
 
 
 
-    <!-- Start Team Member Section -->
-    <section id="team" class="team-member-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                            <h3>Pengaduan</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                        </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="team-section">
-                    
-                        
-                
-                
-
-                                <div class="our-team">
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-1.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-2.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-3.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>    
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-4.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-1.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="team-member">
-                                        <img src="images/team/manage-2.png" class="img-responsive" alt="">
-                                        <div class="team-details">
-                                            <h4>John Doe</h4>
-                                            <p>Founder & Director</p>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                    
-                    </div>
-                </div>
-            </div>
-                
-        </div>
-    </section>
-    <!-- End Team Member Section -->
-
-
-
+    
     <!-- Start Pricing Table Section -->
     <div id="pricing" class="pricing-section">
         <div class="container">
@@ -564,7 +436,7 @@
                     <div class="col-md-12">
                         <div class="section-title text-center">
                             <h3>Profil Desa</h3>
-                            <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate</p>
+                            <p class="white-text"></p>
                         </div>
                     </div>
                 </div>
@@ -577,142 +449,125 @@
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Free</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
+
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Standard</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Premium</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Professional</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Premium</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Professional</h3>
+								    <h3>Nama Desa</h3>
                                 </div>
-                                <div class="plan-price">
-                                    <div class="price-value">$49<span>.00</span></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
+                                <div class="plan-list text-left">
                                     <ul>
-                                        <li>40 GB Storage</li>
-                                        <li>40GB Transfer</li>
-                                        <li>10 Domains</li>
-                                        <li>20 Projects</li>
-                                        <li>Free installation</li>
+                                        <li>Nama Desa:</li>
+                                        <li>Kecamatan:</li>
+                                        <li>Kabupaten/Kota:</li>
+                                        <li>Provinsi:</li>
+                                        <li>Kontak:</li>
+                                        <li>Alamat:</li>
                                     </ul>
                                 </div>
                                 <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Sign Up Now</a>
+                                    <a href="#" class="btn-system btn-small">Informasi Lain</a>
                                 </div>
                             </div>
                         </div>
