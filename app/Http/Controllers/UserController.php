@@ -19,7 +19,7 @@ class UserController extends Controller
         return view('beranda');
         //return view('welcome');
     }
-    public function portofolio(){
-        echo "ini portofolio";
+    public function desa(){
+       return view('desa');
     }
 }
