@@ -24,3 +24,4 @@ Route::prefix('admin')->group(function(){
     Route::post('/insertDesa', 'AdminController@insertDesa');
     
 });
+Route::get('/desa', 'UserController@desa');

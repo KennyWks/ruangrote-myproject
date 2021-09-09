@@ -87,7 +87,7 @@
                                 <h4>*MINIMAL 3 TERATAS*</h4>
                                 <div class="alert alert-danger" role="alert">
                                     <div class="row">
-                                        <div class="col-sm-8 text-left" style="font-italic"> Judul</div>
+                                        <div class="col-sm-8 text-left"> Judul</div>
                                         <div class="col-sm-4 text-right">Tanggal</div>
                                     </div>
                                     <hr>
@@ -119,22 +119,7 @@
         <!-- End Feature Section -->
     
     
-    <!-- Start Call to Action Section -->
-    <section class="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Libero tempore soluta nobis est eligendi</br> optio cumque nihil impedit minus id quod maxime </br>placeat facere possimus, omnis voluptas assumenda est</h1>
-                    <button type="submit" class="btn btn-primary">Buy This Template</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Call to Action Section -->
     
-    
-    
-   
     <!-- Start About Us Section -->
     <section id="about-us" class="about-us-section-1">
         <div class="container">
@@ -142,7 +127,6 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="section-title text-center">
                             <h3>Pengumuman</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
                         </div>
                 </div>
             </div>
@@ -150,147 +134,59 @@
                 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/about-01.jpg" class="img-responsive" alt="..">
-                        <h4>Office Philosophy</h4>
+                        <h4>Judul Pengumuman</h4>
                         <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
+                        <p>*isi* Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/about-02.jpg" class="img-responsive" alt="..">
-                        <h4>Office Mission & Vission</h4>
+                        <h4>Judul Pengumuman</h4>
                         <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
+                        <p>*isi* Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/about-03.jpg" class="img-responsive" alt="..">
-                        <h4>Office Value & Rules</h4>
+                        <h4>Judul Pengumuman</h4>
                         <div class="border"></div>
-                        <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
+                        <p>*isi* Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
                     </div>
                 </div>
                 
-            </div><!-- /.row -->            
+            </div><!-- /.row -->  
+            
+            <!-- /.Pagination -->
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+            </nav><!-- /.Tutup Pagination -->
+
             
         </div><!-- /.container -->
     </section>
     <!-- End About Us Section -->
 
 
-    <!-- Start About Us Section 2 -->
-    <div class="about-us-section-2">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-6">
-                    <div class="skill-shortcode">
-                        
-                        <!-- Progress Bar -->
-                        <div class="skill">
-                            <p>Web Design</p>          
-                            <div class="progress">         
-                                <div class="progress-bar" role="progressbar"  data-percentage="60">
-                                    <span class="progress-bar-span" >60%</span>
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
-                            </div>  
-                        </div>
-                        
-                        <!-- Progress Bar -->
-                        <div class="skill">
-                            <p>HTML & CSS</p>          
-                            <div class="progress">         
-                                <div class="progress-bar" role="progressbar"  data-percentage="95">
-                                    <span class="progress-bar-span" >95%</span>
-                                    <span class="sr-only">95% Complete</span>
-                                </div>
-                            </div>  
-                        </div>
-                        
-                        <!-- Progress Bar -->
-                        <div class="skill">
-                            <p>Wordpress</p>          
-                            <div class="progress">         
-                                <div class="progress-bar" role="progressbar"  data-percentage="80">
-                                    <span class="progress-bar-span" >80%</span>
-                                    <span class="sr-only">80% Complete</span>
-                                </div>
-                            </div>  
-                        </div>
-                        
-                        <!-- Progress Bar -->
-                        <div class="skill">
-                            <p>Joomla</p>          
-                            <div class="progress">         
-                                <div class="progress-bar" role="progressbar"  data-percentage="100">
-                                    <span class="progress-bar-span" >100%</span>
-                                    <span class="sr-only">100% Complete</span>
-                                </div>
-                            </div>  
-                        </div>
-                        
-                        <!-- Progress Bar -->
-                        <div class="skill">
-                            <p>Extension</p>          
-                            <div class="progress">         
-                                <div class="progress-bar" role="progressbar"  data-percentage="70">
-                                    <span class="progress-bar-span" >70%</span>
-                                    <span class="sr-only">70% Complete</span>
-                                </div>
-                            </div>  
-                        </div>
-                                                            
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div id="carousel-example-generic" class="carousel slide about-slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="images/about-01.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="images/about-02.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="images/about-03.jpg" alt="">
-                            </div>
-    
-                        </div>
-  
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- Start About Us Section 2 -->
-
-
-    
-
-
+   
     <!-- Start Feature Section -->
         <section id="service" class="services-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center">
-                            <h3>Ruang ASA</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                            <h3>Ruang ASA</h3> <br>
                         </div>
                     </div>
                 </div>
@@ -388,45 +284,6 @@
     
     
     
-    <!-- Start Fun Facts Section -->
-    <section class="fun-facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-cloud-upload"></i>
-                        <div class="timer" id="item1" data-to="991" data-speed="5000"></div>
-                        <h5>Files uploaded</h5>                               
-                      </div>
-                    </div>  
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-check"></i>
-                        <div class="timer" id="item2" data-to="7394" data-speed="5000"></div>
-                        <h5>Projects completed</h5>                               
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-code"></i>
-                        <div class="timer" id="item3" data-to="18745" data-speed="5000"></div>
-                        <h5>Lines of code written</h5>                               
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                      <div class="counter-item">
-                        <i class="fa fa-male"></i>
-                        <div class="timer" id="item4" data-to="8423" data-speed="5000"></div>
-                        <h5>Happy clients</h5>                               
-                      </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Fun Facts Section -->
-
-
-
     
     <!-- Start Pricing Table Section -->
     <div id="pricing" class="pricing-section">
@@ -449,7 +306,7 @@
                         <div class="col-md-12">
                             <div class="pricing-table">
                                 <div class="plan-name">
-								    <h3>Nama Desa</h3>
+								    <h3>Nama Desa 1</h3>
                                 </div>
                                 <div class="plan-list text-left">
                                     <ul>
