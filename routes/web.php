@@ -14,4 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'UserController@getIndex');
-Route::get('/portofolio', 'UserController@portofolio');
+
+//admin
+Route::prefix('admin')->group(function(){
+    Route::get('/dashboard', 'AdminController@dashboard');
+
+    //Desa
+    Route::get('/data-desa', 'AdminController@dataDesa');
+    Route::post('/insertDesa', 'AdminController@insertDesa');
+    
+});
