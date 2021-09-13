@@ -88,7 +88,11 @@ class AdminController extends Controller
 
         if(Auth::attempt($input)){
             $request->session()->regenerate();
-            return redirect()->intended('/admin/dashboard');
+            if(auth()->user()->roleId == 2) {
+                return redirect()->intended('/admin/dashboard');
+            } else {
+                return redirect()->intended('/desa/dashboard');
+            }
         }
 
         return redirect('/admin/login')->withErrors($validator)->withInput()->with('loginError', 'Login Gagal!');
@@ -108,6 +112,7 @@ class AdminController extends Controller
             'email' => 'required|unique:superadmin|email:dns',
             'namaLengkap' => 'required|max:255',
             'nomorTelepon' => 'required|max:12|min:11|unique:superadmin',
+            'roleId' => 'required',
         ];
 
         $input = [
@@ -116,7 +121,8 @@ class AdminController extends Controller
             'konfirmasiPassword' => $request->input('konfirmasiPassword'),
             'email' => $request->input('email'),
             'namaLengkap' => $request->input('namaLengkap'),
-            'nomorTelepon' => $request->input('nomorTelepon')
+            'nomorTelepon' => $request->input('nomorTelepon'),
+            'roleId' => $request->input('roleId')
         ];
 
         $messages = [
@@ -138,7 +144,8 @@ class AdminController extends Controller
             'password' => $request->input('password'),
             'email' => $request->input('email'),
             'namaLengkap' => $request->input('namaLengkap'),
-            'nomorTelepon' => $request->input('nomorTelepon')
+            'nomorTelepon' => $request->input('nomorTelepon'),
+            'roleId' => $request->input('roleId')
         ];
 
         $data['password'] = Hash::make($data['password']); 

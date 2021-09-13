@@ -46,13 +46,13 @@
                                                 <label class="form-check-label" for="inputRememberPassword">Ingat Password</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Lupa Password?</a>
+                                                {{-- <a class="small" href="#">Lupa Password?</a> --}}
                                                 <button class="btn btn-primary" type="submit">Login</button>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small">Belum punya akun? <a href="/admin/register">Daftar Sekarang!</a></div>
+                                        {{-- <div class="small">Belum punya akun? <a href="/admin/register">Daftar Sekarang!</a></div> --}}
                                     </div>
                                 </div>
                             </div>

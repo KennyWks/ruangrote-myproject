@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'UserController@getIndex');
 
+Route::prefix('desa')->group(function(){
+    Route::get('/dashboard', 'DesaController@dashboard')->middleware('auth');
+});
+
 //admin
 Route::prefix('admin')->group(function(){
     Route::get('/login', 'AdminController@logIn')->name('login')->middleware('guest');
