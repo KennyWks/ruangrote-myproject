@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'UserController@getIndex');
+Route::get('/desa', 'UserController@desa');
+
 
 //admin
 Route::prefix('admin')->group(function(){
@@ -28,6 +30,13 @@ Route::prefix('admin')->group(function(){
     //Desa
     Route::get('/data-desa', 'AdminController@dataDesa');
     Route::post('/insertDesa', 'AdminController@insertDesa');
+  
+    Route::post('/updateDesa', 'AdminController@updateDesa');
+    Route::get('/deleteDesa/{id}', 'AdminController@deleteDesa');
+    Route::post('/passDesa', 'AdminController@passDesa');
+
+    //Dokumen
+    Route::get('/dokumen/{id}', 'AdminController@dokumen');
 });
 
 Route::get('/desa', 'UserController@desa');

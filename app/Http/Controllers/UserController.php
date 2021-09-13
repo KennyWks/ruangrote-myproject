@@ -8,15 +8,13 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function getIndex(){
-        //$users = DB::table('superadmin')->get();
+        $pengaduan = DB::table('pengaduan')->get();
         
-        //echo $users;
-        //$superadmin = DB::table('superadmin')->get();
-        //echo $superadmin;
+        $data = [
+            'pengaduan' => $pengaduan
+        ];
         
-        return view('beranda');
-        
-        return view('beranda');
+        return view('beranda', $data);
         //return view('welcome');
     }
     public function desa(){
