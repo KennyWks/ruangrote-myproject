@@ -24,11 +24,15 @@
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nama Admin</a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> {{auth()->user()->username}}</a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!" style="color: RED">Logout</a></li>
+                        <li>
+                            <form action="/admin/logout" method="post">
+                                @csrf
+                                <button class="dropdown-item" type="submit">Logout <span data-feather="log-out"></span></button>    
+                            </form>
                     </ul>
                 </li>
             </ul>
