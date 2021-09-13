@@ -21,10 +21,10 @@
                 <div class="slider-content">
                     <div class="col-md-12 text-center">
                         <h1 class="animated3">
-                            <span><strong>Fame</strong> for the highest</span>
+                            <span><strong>Ruang </strong>Rote</span>
                         </h1>
-                        <p class="animated2">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum</p>
-                        <a href="#feature" class="page-scroll btn btn-primary animated1">Read More</a>
+                        <p class="animated2">Sistem pendataan berkas desa berbasis website Rote Ndao</p>
+                        <a href="#feature" class="page-scroll btn btn-primary animated1">Lanjutkan</a>
                     </div>
                 </div>
             </div>
@@ -84,16 +84,17 @@
                 <div class="feature">
                     <i class="fa fa-bullhorn"></i>
                     <div class="feature-content">
-                        <h4>Pengumuman</h4>
-                        <h4>*MINIMAL 3 TERATAS*</h4>
-                        <div class="alert alert-danger" role="alert">
+                        <h3>PENGADUAN</h3>
+                        <div class="alert alert-secondary" role="alert">
+                            @foreach ($pengaduan as $aduan)
                             <div class="row">
-                                <div class="col-sm-8 text-left"> Judul</div>
-                                <div class="col-sm-4 text-right">Tanggal</div>
+                                <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek)?></strong></div>
                             </div>
                             <hr>
-                            The face and throat are pinkish, the head and back are brown, and the rump is blue. The brightly contrasting light and dark blue markings on the wings and tail
-                            <a href="#about-us">More</a>
+                            "{{$aduan->isi}}"
+                            <br><br><span style="float: right"><strong>-{{$aduan->nama}} </strong>/ <?php echo substr($aduan->created_at, 0, 10)?></span><br>
+                            <hr>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -105,10 +106,16 @@
                     <div class="feature-content">
                         <h4>Pengaduan</h4>
                         <h4>*MINIMAL 3 TERATAS*</h4>
-                        <div class="alert alert-success" role="alert">
-                            <p>Judul</p>
+                        <div class="alert alert-secondary" role="alert">
+                            @foreach ($pengaduan as $aduan)
+                            <div class="row">
+                                <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek)?></strong></div>
+                            </div>
                             <hr>
-                            The face and throat are pinkish, the head and back are brown, and the rump is blue. The brightly contrasting light and dark blue markings on the wings and tail
+                            "{{$aduan->isi}}"
+                            <br><br><span style="float: right"><strong>-{{$aduan->nama}} </strong>/ <?php echo substr($aduan->created_at, 0, 10)?></span><br>
+                            <hr>
+                            @endforeach
                         </div>
                     </div>
                 </div>
