@@ -15,6 +15,7 @@ class AdminController extends Controller
         //$users = DB::table('superadmin')->get();
         return view('admin/dashboard');
     }
+    //Desa
     public function dataDesa(){
         $desa = DB::table('profil_desa')->get();
         $data = [
@@ -23,37 +24,37 @@ class AdminController extends Controller
         return view('admin/data-desa', $data);
     }
     public function insertDesa(Request $request){
-        $name= $_FILES['file']['name'];
-        $tmp_name= $_FILES['file']['tmp_name'];
-        $position= strpos($name, ".");
-        $fileextension= substr($name, $position + 1);
-        $fileextension= strtolower($fileextension);
+        $filename = $request->file('gambar')->getClientOriginalName();
+        $temp = $request->file('gambar')->getPathName();
+        $file = $request->input('nama_desa')."_".$filename;
+    
+        $folder = "upload/foto_struktur/".$file;
+                           
+        move_uploaded_file($temp, $folder);
+        //dd($file);
+        
+        DB::table('profil_desa')->insert(['nama_desa' => $request->input('nama_desa'), 'kecamatan' => $request->input('kecamatan'), 'kota_kab' => $request->input('kotakab'), 'provinsi' => 'NTT', 'kontak' => $request->input('kontak'), 'alamat' => $request->input('alamat'), 'foto_struktur' => $file, 'username' => $request->input('username'), 'password' => md5($request->input('password'))]);
+        return redirect('/admin/data-desa');
+    }
+    public function updateDesa(Request $request){
+        if(null !== $request->input('gambar_valid')){
+            $filename = $request->file('gambar')->getClientOriginalName();
+            $temp = $request->file('gambar')->getPathName();
+            $file = $request->input('nama_desa')."_".$filename;
 
-        $path= 'Upload/foto_struktur/';
-            
-        if (($fileextension !== "jpg") && ($fileextension !== "jpeg") && ($fileextension !== "png") && ($fileextension !== "bmp")){
-            echo "The file extension must be .jpg, .jpeg, .png, or .bmp in order to be uploaded";
+            $folder = "upload/foto_struktur/".$file;
+                                
+            move_uploaded_file($temp, $folder);
+        }else{    
+            DB::table('profil_desa')->where('id_desa', $request->input('id_desa'))
+            ->update(['nama_desa' => $request->input('nama_desa'), 'kecamatan' => $request->input('kecamatan'), 'kota_kab' => $request->input('kotakab'), 'provinsi' => 'NTT', 'kontak' => $request->input('kontak'), 'alamat' => $request->input('alamat'), 'foto_struktur' => 'test.jpg', 'username' => $request->input('username')]);
         }
-        else if (($fileextension == "jpg") || ($fileextension == "jpeg") || ($fileextension == "png") || ($fileextension == "bmp")){
-            if (move_uploaded_file($tmp_name, $path.$name)) {
-                echo 'Uploaded!';
-            }
-        }
-
-        DB::table('profil_desa')
-        ->updateOrInsert(
-            ['nama_desa' => $request->input('nama_desa'), 'kecamatan' => $request->input('kecamatan')],
-            [
-                'kota_kab' => $request->input('kotakab'),
-                'provinsi' => 'NTT',
-                'kontak' => $request->input('kontak'),
-                'alamat' => $request->input('alamat'),
-                'foto_struktur' => 'test.jpg',
-                'username' => $request->input('username'),
-                'password' => md5($request->input('password'))
-            ]
-        );
-
+        
+        
+        return redirect('/admin/data-desa');
+    }
+    public function deleteDesa($id){
+        DB::table('profil_desa')->where('id_desa', '=', $id)->delete();
         return redirect('/admin/data-desa');
     }
 
@@ -159,5 +160,26 @@ class AdminController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/admin/login');
+     }
+
+    public function passDesa(Request $request){
+        DB::table('profil_desa')->where('id_desa', '=', $request->input('id_desa'))->update(['password' => md5($request->input('password'))]);
+        return redirect('/admin/data-desa');
+    }
+
+    //Dokumen
+    public function dokumen($id){
+        $jumlah_dok = DB::table('dokumen_desa')->where('id_desa', $id)->count();
+        $dokumen = DB::table('dokumen_desa')->where('id_desa', $id)->get();
+        $desa = DB::table('profil_desa')->where('id_desa', $id)->first();
+        $data = [
+            'desa' => $desa,
+            'jumlah_dok' => $jumlah_dok,
+            'dokumen' => $dokumen
+        ];
+        return view('admin/dokumen', $data);
+    }
+    
+  public function dokumenInsert($id){
     }
 }
