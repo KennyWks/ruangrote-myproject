@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'UserController@getIndex');
 Route::get('/desa', 'UserController@desa');
+Route::post('/insertAduan', 'UserController@insertAduan');
+Route::get('/list-desa', 'UserController@listDesa');
 
 
 //admin
@@ -35,3 +37,4 @@ Route::prefix('admin')->group(function () {
     
 });
 Route::get('/desa', 'UserController@desa');
+Route::get('/profil/{id}', 'UserController@profil');

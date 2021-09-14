@@ -1,198 +1,197 @@
-@include('user.header')
-<div class="row" style="margin-top: 190px;">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ruang Rote</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+    <link href="/css/animate.css" rel="stylesheet">
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.css">
+    <link rel="stylesheet" href="/css/owl.transitions.css">
+
+    <!-- Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/color/light-red.css">
+
+
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+
+    <!-- Modernizer js -->
+    <script src="/js/modernizr.custom.js"></script>
+
+
+</head>
+
+<body class="index">
+
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Ruang Rote</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/">Beranda</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#aduan">Pengumuman</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#ruangasa">Ruang ASA</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#profil">Profil Desa</a>
+                        
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!--HEADER-->
+
+<div class="row" style="margin-top: 90px;">
 
     <div class="col-md-12">
         <div class="welcome-section text-center">
 
-            <h4>Profil Desa</h4>
+            <h4>Profil Desa | <strong>{{$desa->nama_desa}}</strong></h4>
             <div class="border"></div>
-            <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4" style="border-right: 1px solid #9e9e9e">
+                        <center><h3>Struktur Desa</h3></center>
+                        <a href=""><img src="/upload/foto_struktur/{{$desa->foto_struktur}}" alt="" width="100%"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <center><h3>Profil</h3></center><br>
+                        <div class="plan-list text-left">
+                            <ul>
+                                <li>Nama Desa: {{$desa->nama_desa}}</li>
+                                <li>Kecamatan: {{$desa->kecamatan}}</li>
+                                <li>Kabupaten/Kota: {{$desa->kota_kab}}</li>
+                                <li>Provinsi: {{$desa->provinsi}}</li>
+                                <li>Kontak: {{$desa->kontak}}</li>
+                                <li>Alamat: {{$desa->alamat}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="border-left: 1px solid #9e9e9e">
+                        <center><h3>Produk Hukum</h3></center><br>
+                        <div class="plan-list text-left">
+                            <ul>
+                                <li><a href="">PERDA 8 Tentang Pemilihan Kepala Desa</a></li>
+                                <li><a href="">PERDA 9 Tentang BPD</a></li>
+                                <li><a href="">PERDA 10 Tentang Perangkat Desa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 </div>
-<div class="row">
-
-    <div class="col-md-12">
-        <div class="welcome-section text-center">
-
-            <h4>Struktur Pemerintahan Desa .....</h4>
-            <div class="border"></div>
-            <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-        </div>
-    </div>
-
-
-</div><!-- /.row -->
-
-</div><!-- /.container -->
-</section>
-<!-- End About Us Section -->
-
-
 
 <hr>
-<!-- Start About Us Section -->
-<section id="about-us" class="about-us-section-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="section-title text-center">
-                    <h3>Lampiran Kegiatan Desa ....</h3><br>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="images/about-01.jpg" class="img-responsive" alt="..">
-                    <h4>Office Philosophy *JUDUL KEGIATAN*</h4>
-                    <div class="border"></div>
-                    <p>*ISI* Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="images/about-02.jpg" class="img-responsive" alt="..">
-                    <h4>Office Mission & Vission</h4>
-                    <div class="border"></div>
-                    <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="images/about-03.jpg" class="img-responsive" alt="..">
-                    <h4>Office Value & Rules</h4>
-                    <div class="border"></div>
-                    <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-        </div><!-- /.row -->
-
-        <!-- /.Pagination -->
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav><!-- /.Tutup Pagination -->
-
-    </div><!-- /.container -->
-</section>
-<!-- End About Us Section -->
-
-
-
 <!-- Start Feature Section -->
-<section id="service" class="services-section">
+<section id="service" class="services-section" style="margin-top: -100px">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h3>Produk Hukum Desa ....</h3><br>
+                    <h3>Kegiatan</h3><br>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-magic"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Web Design</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
+            @foreach ($kegiatan_limit as $lim)
+            <div class="col-sm-4">
+                <div class="card mb-3">
+                <img src="https://4.bp.blogspot.com/-QKzmcsjmudA/UorK1m96q3I/AAAAAAAAAdc/lwqGQx4n8N4/s1600/IMG_0204.JPG" class="card-img-top" width="100%" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>{{$lim->judul}}</strong></h4>
+                        <p class="card-text">{{$lim->keterangan}}</p>
+                        <p class="card-text" style="float: right"><small class="text-muted"><i class="fa fa-user"></i> ({{$desa->username}}) | <i class="fa fa-calendar"></i> <?= substr($lim->created_at, 0, 10)?></small></p>
                     </div>
                 </div>
-            </div><!-- /.col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-css3"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">HTML5 & CSS3</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-wordpress"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Wordpress Theme</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-plug"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Wordpress Plugin</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-joomla"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Joomla Template</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="feature-2">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-cube"></i>
-                            <div class="border"></div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Joomla Extension</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-
+            </div>
+            @endforeach
         </div><!-- /.row -->
+        <center><button class="btn btn-primary" data-toggle="modal" data-target="#kegiatan">Selengkapnya</button></center>
 
+                
+        <!-- Modal -->
+        <div class="modal fade" id="kegiatan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Kegiatan</h5>
+            </div>
+            <div class="modal-body">
+            @foreach ($kegiatan as $k)
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card mb-3">
+                    <center><img src="https://4.bp.blogspot.com/-QKzmcsjmudA/UorK1m96q3I/AAAAAAAAAdc/lwqGQx4n8N4/s1600/IMG_0204.JPG" class="card-img-top" width="50%"></center>
+                        <div class="card-body">
+                            <hr>
+                            <h4 class="card-title"><strong>{{$k->judul}}</strong></h4>
+                            <p class="card-text">{{$k->keterangan}}</p>
+                            <p class="card-text" style="float: right"><small class="text-muted"><i class="fa fa-user"></i> ({{$desa->username}}) | <i class="fa fa-calendar"></i> <?= substr($k->created_at, 0, 10)?></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
+            </div>
+            </div>
+        </div>
+        </div>
     </div><!-- /.container -->
 </section>
 <!-- End Feature Section -->
@@ -205,54 +204,41 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h3>Dokumen Virtual Desa ....</h3><br>
+                    <h3>Dokumen Virtual Desa</h3><br>
                 </div>
             </div>
         </div>
 
 
 
-        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Pencarian">
 
 
-        <table id="myTable" class="table">
+        <table id="myTable" class="table table-responsive">
             <thead>
                 <tr>
-                    <th scope="col">No</th>
                     <th scope="col">Tahun</th>
-                    <th scope="col">RPJM(PDF)</th>
-                    <th scope="col">RKP (PDF)</th>
-                    <th scope="col">APB (PDF)</th>
-                    <th scope="col">Pertanggung Jawaban (PDF)</th>
+                    <th scope="col">RPJM</th>
+                    <th scope="col">RKP</th>
+                    <th scope="col">APBD</th>
+                    <th scope="col">Pertanggung Jawaban</th>
+                    <th>Kegiatan Prioritas</th>
+                    <th>Peraturan</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach ($dokumen as $dok)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>2010</td>
-                    <td>Otto.pdf</td>
-                    <td>@mdo.pdf</td>
-                    <td>shf.pdf</td>
-                    <td>
-                        <ul>
-                            <li>Semester1.pdf</li>
-                            <li>Semester2.pdf</li>
-                        </ul>
-                    </td>
+                    <th scope="row">{{$dok->tahun}}</th>
+                    <td><a href="">{{$dok->rpjm}}</a></td>
+                    <td><a href="">{{$dok->rkp}}</a></td>
+                    <td><a href="">{{$dok->apbd}}</a></td>
+                    <td><a href="">{{$dok->pj_sm1}}</a><br>
+                        <a href="">{{$dok->pj_sm2}}</a></td>
+                    <td><a href="">{{$dok->kegiatan_prioritas}}</a></td>
+                    <td><a href="">{{$dok->peraturan}}</a></td>
                 </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>2011</td>
-                    <td>Otto.pdf</td>
-                    <td>@mdo.pdf</td>
-                    <td>shf.pdf</td>
-                    <td>
-                        <ul>
-                            <li>Semester1.pdf</li>
-                            <li>Semester2.pdf</li>
-                        </ul>
-                    </td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
 
