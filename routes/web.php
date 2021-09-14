@@ -20,21 +20,26 @@ Route::get('/list-desa', 'UserController@listDesa');
 
 
 //admin
-Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', 'AdminController@dashboard');
+Route::prefix('admin')->group(function(){
+    Route::get('/login', 'AdminController@logIn')->name('login')->middleware('guest');
+    Route::get('/register', 'AdminController@register');
+    Route::post('/signin', 'AdminController@signIn');
+    Route::post('/signup', 'AdminController@signUp');
+    Route::post('/logout', 'AdminController@logout');
+
+    Route::get('/dashboard', 'AdminController@dashboard')->middleware('auth');
 
     //Desa
     Route::get('/data-desa', 'AdminController@dataDesa');
     Route::post('/insertDesa', 'AdminController@insertDesa');
+  
     Route::post('/updateDesa', 'AdminController@updateDesa');
     Route::get('/deleteDesa/{id}', 'AdminController@deleteDesa');
     Route::post('/passDesa', 'AdminController@passDesa');
 
     //Dokumen
     Route::get('/dokumen/{id}', 'AdminController@dokumen');
-
-
-    
 });
+
 Route::get('/desa', 'UserController@desa');
 Route::get('/profil/{id}', 'UserController@profil');

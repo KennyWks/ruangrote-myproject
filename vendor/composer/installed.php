@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v8.6.1',
-    'version' => '8.6.1.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'd1b8ac4a5eed3b93a6670c36ab39bfbb2c2a84b8',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -150,6 +150,15 @@
       array (
       ),
       'reference' => 'a8ccedc7ca95189ead0e407c43b530dc17791d6a',
+    ),
+    'goldspecdigital/laravel-eloquent-uuid' => 
+    array (
+      'pretty_version' => 'v8.0.0',
+      'version' => '8.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c203b3104e5c371b1ed94b0dbaf12de1d1ca7045',
     ),
     'graham-campbell/result-type' => 
     array (
@@ -431,12 +440,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.6.1',
-      'version' => '8.6.1.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'd1b8ac4a5eed3b93a6670c36ab39bfbb2c2a84b8',
     ),
     'laravel/sail' => 
     array (
@@ -803,8 +812,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0|2.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0|2.0',
       ),
     ),
     'psr/simple-cache' => 
