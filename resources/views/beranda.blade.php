@@ -316,13 +316,23 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="form-group">
                                 <p class="help-block text-danger">Kategori</p>
                                 <select required name="kategori" id="" class="form-control">
                                         <option value="" disabled selected>--Pilih Kategori--</option>
                                         <option value="Saran">Saran</option>
                                         <option value="Kritik">Kritik</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                <p class="help-block text-danger">Tag</p>
+                                <select required name="tag" id="" class="form-control">
+                                        <option value="" disabled selected>--Pilih Tag--</option>
+                                        <option value="Saran">Pembangunan</option>
+                                        <option value="Kritik">Pelayanan</option>
                                     </select>
                                 </div>
                             </div>

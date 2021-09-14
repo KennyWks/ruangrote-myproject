@@ -53,7 +53,7 @@ class UserController extends Controller
             'email' => $request->input('email'),
             'subjek' => $request->input('subjek'),
             'isi' => $request->input('isi'),
-            'tag' => "-"
+            'tag' => $request->input('tag')
         ]);
 
         return redirect('/');
