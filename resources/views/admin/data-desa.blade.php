@@ -5,7 +5,7 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Data Desa</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Admin / Data-Desa</li>
+                            <li class="breadcrumb-item active">Admin / Pofil </li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">
@@ -76,14 +76,14 @@
                                                 <form action="/admin/passDesa" method="POST">
                                                 <input type="hidden" name="id_desa" value="{{$r->id_desa}}">
                                                 @csrf
-                                                    <div class="mb-3">
+                                                    {{-- <div class="mb-3">
                                                         <label for="exampleInputPassword1" class="form-label">Username</label>
                                                         <input type="text" class="form-control" name="username" readonly value="{{$r->username}}">
                                                     </div>
                                                     <div class="mb-3">
                                                         <label for="exampleInputPassword1" class="form-label">Password</label>
                                                         <input type="password" class="form-control" name="password" placeholder="*Kosongi jika tidak ingin mengubah">
-                                                    </div>
+                                                    </div> --}}
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -148,11 +148,7 @@
                                                         <input type="checkbox" name="gambar_valid"> Ganti gambar struktur desa.
                                                         <div id="emailHelp" class="form-text">(*File berekstensi: .jpg, .jpeg, .png)</div>
                                                     </div>
-                                                    <hr>
-                                                    <div class="mb-3">
-                                                        <label for="exampleInputPassword1" class="form-label">Username</label>
-                                                        <input type="text" class="form-control" name="username" value="{{$r->username}}">
-                                                    </div>
+                                                    
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>

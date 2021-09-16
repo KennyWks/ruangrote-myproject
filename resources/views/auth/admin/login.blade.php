@@ -21,7 +21,7 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Silahkan Login</h3></div>
                                     <div class="card-body">
-                                        <form action="/admin/signin" method="POST">
+                                        <form action="/signin" method="POST">
                                             @csrf
                                             <div class="form-floating mb-3">
                                                 <input class="form-control @error('email') is-invalid @enderror " id="email" name="email" value="{{old('email')}}" type="email" placeholder="Email anda" required autofocus />
@@ -41,10 +41,10 @@
                                                 </div>
                                                 @enderror
                                             </div>
-                                            <div class="form-check mb-3">
+                                            {{-- <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Ingat Password</label>
-                                            </div>
+                                            </div> --}}
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 {{-- <a class="small" href="#">Lupa Password?</a> --}}
                                                 <button class="btn btn-primary" type="submit">Login</button>
@@ -52,7 +52,6 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        {{-- <div class="small">Belum punya akun? <a href="/admin/register">Daftar Sekarang!</a></div> --}}
                                     </div>
                                 </div>
                             </div>

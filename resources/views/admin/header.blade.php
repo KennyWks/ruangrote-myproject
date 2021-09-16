@@ -29,7 +29,7 @@
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li>
-                            <form action="/admin/logout" method="post">
+                            <form action="/logout" method="post">
                                 @csrf
                                 <button class="dropdown-item" type="submit">Logout <span data-feather="log-out"></span></button>    
                             </form>

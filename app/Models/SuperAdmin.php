@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Notifications\Notifiable;
 use GoldSpecDigital\LaravelEloquentUUID\Foundation\Auth\User as Authenticatable;
 use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid;
@@ -11,6 +10,7 @@ class SuperAdmin extends Authenticatable {
     use Notifiable;
     use Uuid;
 
+    protected $primaryKey = 'id_admin';
     protected $keyType = 'string';
     public $incrementing = false;
     protected $table = 'superadmin';

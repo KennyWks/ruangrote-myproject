@@ -8,7 +8,7 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Buat Akun</h3></div>
                                     <div class="card-body">
-                                        <form action="/admin/signup" method="POST">
+                                        <form action="/signup" method="POST">
                                             @csrf
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
@@ -96,7 +96,7 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small">Sudah punya akun? <a href="/admin/login">Login Sekarang!</a></div>
+                                        <div class="small">Sudah punya akun? <a href="/login">Login Sekarang!</a></div>
                                     </div>
                                 </div>
                             </div>

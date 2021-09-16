@@ -15,13 +15,14 @@ class SuperAdmin extends Migration
     public function up()
     {
         Schema::create('superadmin', function (Blueprint $table) {
-            $table->uuid('id')->primary();
+            $table->uuid('id_admin')->primary();
             $table->string('username')->unique();
             $table->string('password');
             $table->string('email')->unique();
             $table->string('namaLengkap');
             $table->string('nomorTelepon')->unique();
             $table->string('roleId');
+            $table->string('id_desa');
             $table->rememberToken();
             $table->timestamps();
         });
