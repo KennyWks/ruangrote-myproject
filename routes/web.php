@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'UserController@getIndex');
 Route::get('/desa', 'UserController@desa');
+Route::post('/insertAduan', 'UserController@insertAduan');
+Route::get('/list-desa', 'UserController@listDesa');
 
 Route::prefix('desa')->group(function(){
     Route::get('/dashboard', 'DesaController@dashboard');
@@ -70,4 +72,4 @@ Route::prefix('admin')->group(function(){
 
     //Dokumen
     Route::get('/dokumen/{id}', 'AdminController@dokumen');
-});
+
