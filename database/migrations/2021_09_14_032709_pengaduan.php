@@ -16,7 +16,7 @@ class Pengaduan extends Migration
     {
         Schema::create('pengaduan', function (Blueprint $table) {
             $table->uuid('id_anduan')->primary();
-            $table->string('instansi');
+            $table->uuid('instansi');
             $table->string('nama');
             $table->string('email');
             $table->string('subjek');            

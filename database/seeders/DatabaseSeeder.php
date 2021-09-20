@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
             'kota_kab' => 'Kab Kupang',
             'provinsi' => 'NTT',
             'kontak' => '12345',
-            'alamat' => 'Jalan sulamu',
+            'alamat' => 'Jalan sulamu 1',
             'foto_struktur' => '/upload/foto_struktur/default.png',
         ]);
 
@@ -39,27 +39,40 @@ class DatabaseSeeder extends Seeder
             'kota_kab' => 'Kab Kupang',
             'provinsi' => 'NTT',
             'kontak' => '54321',
-            'alamat' => 'Jalan sulamu',
+            'alamat' => 'Jalan sulamu 2',
             'foto_struktur' => '/upload/foto_struktur/default.png',
         ]);
 
         SuperAdmin::create([
             'username' => 'admins',
             'password' => '$2y$10$DStoP7StHRj4NFPHN.QG/e16S0N3CQpczCYYOtEh2P1Yqi0nB/E9G',
-            'email' => 'kenny.perulu@gmail.com',
+            'email' => 'kenny@gmail.com',
             'namaLengkap' => 'Kenny Perulu',
             'nomorTelepon' => '081247569523',
             'roleId' => '2',
+            'aktif' => '1',
             'id_desa' => '3e74a87d-6e3a-4f32-9e89-c71b72c00667',
         ]);
 
         SuperAdmin::create([
-            'username' => 'admino',
+            'username' => 'admino1',
             'password' => '$2y$10$2xMLOZbu/CiXuM1URUseoeEstaH3272UdMpZfHNyEzqfzB3pczbMq',
-            'email' => 'feldiamalo@gmail.com',
+            'email' => 'feldi@gmail.com',
             'namaLengkap' => 'Feldi Amalo',
             'nomorTelepon' => '081247569532',
             'roleId' => '1',
+            'aktif' => '0',
+            'id_desa' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+        ]);
+
+        SuperAdmin::create([
+            'username' => 'admino2',
+            'password' => '$2y$10$2xMLOZbu/CiXuM1URUseoeEstaH3272UdMpZfHNyEzqfzB3pczbMq',
+            'email' => 'sinyo@gmail.com',
+            'namaLengkap' => 'Sinyo Day',
+            'nomorTelepon' => '081247569444',
+            'roleId' => '1',
+            'aktif' => '1',
             'id_desa' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
         ]);
 
@@ -93,7 +106,17 @@ class DatabaseSeeder extends Seeder
 
         Pengaduan::create([
             'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
-            'nama' => 'Aris',
+            'nama' => 'Aris1',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn1',
+            'isi' => 'isi pengaduan dugaan kkn1',
+            'kategori' => 'kategori1',
+            'tag' => 'tag1',
+        ]);
+        
+        Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris2',
             'email' => 'aris@gmail.com',
             'subjek' => 'pengaduan dugaan kkn1',
             'isi' => 'isi pengaduan dugaan kkn1',
@@ -102,18 +125,69 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris3',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn3',
+            'isi' => 'isi pengaduan dugaan kkn3',
+            'kategori' => 'kategori3',
+            'tag' => 'tag3',
+        ]);
+
+        Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris4',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn4',
+            'isi' => 'isi pengaduan dugaan kkn4',
+            'kategori' => 'kategori4',
+            'tag' => 'tag4',
+        ]);
+        
+        Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris5',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn5',
+            'isi' => 'isi pengaduan dugaan kkn5',
+            'kategori' => 'kategori5',
+            'tag' => 'tag5',
+        ]);
+
+        Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris6',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn6',
+            'isi' => 'isi pengaduan dugaan kkn6',
+            'kategori' => 'kategori6',
+            'tag' => 'tag6',
+        ]);
+
+        
+        Pengaduan::create([
+            'instansi' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
+            'nama' => 'Aris7',
+            'email' => 'aris@gmail.com',
+            'subjek' => 'pengaduan dugaan kkn7',
+            'isi' => 'isi pengaduan dugaan kkn7',
+            'kategori' => 'kategori7',
+            'tag' => 'tag7',
+        ]);
+
+        Pengaduan::create([
             'instansi' => '3e74a87d-6e3a-4f32-9e89-c71b72c00667',
             'nama' => 'Kenny',
             'email' => 'kenny@gmail.com',
-            'subjek' => 'pengaduan dugaan kkn2',
-            'isi' => 'isi pengaduan dugaan kkn2',
-            'kategori' => 'kategori2',
-            'tag' => 'tag2',
+            'subjek' => 'pengaduan dugaan kkn8',
+            'isi' => 'isi pengaduan dugaan kkn8',
+            'kategori' => 'kategori8',
+            'tag' => 'tag8',
         ]);
 
         DokumenDesa::create([
             'id_desa' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
-            'tahun' => '20211',
+            'tahun' => '2021_1',
             'rpjm' => '/upload/file_dokumen/rpjm1.pdf',
             'rkp' => '/upload/file_dokumen/rkp1.pdf',
             'apbd' => '/upload/file_dokumen/apbd1.pdf',
@@ -125,7 +199,7 @@ class DatabaseSeeder extends Seeder
 
         DokumenDesa::create([
             'id_desa' => '3e74a87d-6e3a-4f32-9e89-c71b72c00667',
-            'tahun' => '20212',
+            'tahun' => '2021_2',
             'rpjm' => '/upload/file_dokumen/rpjm2.pdf',
             'rkp' => '/upload/file_dokumen/rkp2.pdf',
             'apbd' => '/upload/file_dokumen/apbd2.pdf',
@@ -138,7 +212,7 @@ class DatabaseSeeder extends Seeder
         ProdukHukum::create([
             'id_prokum' => '3e74a87d-6e3a-4f32-9e89-c71b72c00667',
             'id_desa' => '3e74a87d-6e3a-4f32-9e89-c71b72c00667',
-            'produk_hukum' => 'produkhukum1.pdf',
+            'produk_hukum' => '/upload/file_prokum/produkhukum1.pdf',
         ]);
 
         ProdukHukum::create([
@@ -146,16 +220,5 @@ class DatabaseSeeder extends Seeder
             'id_desa' => '818fd87e-1d84-4966-8a25-87bcbf8e218c',
             'produk_hukum' => '/upload/file_prokum/produkhukum2.pdf',
         ]);
-
-        Roles::create([
-            'name' => 'ROLE_ADMIN',
-            'description' => 'Akun role for admin/opd',
-        ]);
-        
-        Roles::create([
-            'name' => 'ROLE_SUPERADMIN',
-            'description' => 'Akun role for super admin',
-        ]);
- 
     }
 }

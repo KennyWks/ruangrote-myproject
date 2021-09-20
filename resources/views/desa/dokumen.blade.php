@@ -81,7 +81,7 @@
                                                 <form action="/desa/dokumen/delete" method="post">
                                                     @csrf
                                                     <input type="hidden" name="id" value="{{ $r->id_dokumen }}">
-                                                    <button class="btn btn-danger" type="submit"><i
+                                                    <button onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')" class="btn btn-danger" type="submit"><i
                                                             class="far fa-trash-alt"></i>
                                                     </button>
                                                 </form>

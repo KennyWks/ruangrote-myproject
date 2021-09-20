@@ -36,9 +36,10 @@
                         <h1 class="animated2">
                             <span><strong>AKSES</strong> DIMANAPUN KAPANPUN</span>
                         </h1>
-                        <p class="animated3">Kemudahan dalam mengakses secara online kapanpun dan dimanapun berada</p>
-                        <a class="animated3 slider btn btn-primary btn-min-block" href="/list-desa">LIST DESA</a>
-                        <a class="animated3 slider btn btn-white btn-min-block" href="#pengaduan">PENGADUAN</a>
+                        <p class="animated3">Kemudahan dalam mengakses secara online kapanpun dan dimanapun berada
+                        </p>
+                        <a class="animated3 slider btn btn-primary btn-min-block" href="/list-desa">DAFTAR DESA</a>
+                        <a class="animated3 slider btn btn-white btn-min-block" href="#form-aduan">PENGADUAN</a>
                     </div>
                 </div>
             </div>
@@ -69,23 +70,25 @@
                     <i class="fa fa-bullhorn"></i>
                     <div class="feature-content">
                         <h3>PENGADUAN</h3>
-                        <a href="#" data-toggle="modal" data-target="#pengaduan"><u>SELENGKAPNYA >></u></a><br>
+                        <a href="#" data-toggle="modal" data-target="#pengaduan">SELENGKAPNYA >></a><br>
                         <div class="alert alert-secondary" role="alert">
-                            <?php 
-                                $i = 0;
+                            <?php
+                            $i = 0;
                             ?>
                             @foreach ($pengaduan as $aduan)
-                            <div class="row">
-                                <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek)?> | </strong>{{$aduan->instansi}}</div>
-                            </div>
-                            <hr>
-                            "{{$aduan->isi}}"
-                            <br><br><span style="float: right"><strong>-{{$aduan->nama}} </strong>/ <?php echo substr($aduan->created_at, 0, 10)?></span><br>
-                            <hr>
-                            <?php 
-                            $i++
-                            ?>
-                            @if($i == 2)
+                                <div class="row">
+                                    <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek); ?> |
+                                        </strong>{{ $aduan->nama_desa }}</div>
+                                </div>
+                                <hr>
+                                "{{ $aduan->isi }}"
+                                <br><br><span style="float: right"><strong>-{{ $aduan->nama }} </strong>/
+                                    <?php echo substr($aduan->created_at, 0, 10); ?></span><br>
+                                <hr>
+                                <?php
+                                $i++;
+                                ?>
+                                @if ($i == 2)
                                 @break
                             @endif
                             @endforeach
@@ -94,28 +97,30 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12" id="pengumuman">
                 <div class="feature">
                     <i class="fa fa-comment"></i>
                     <div class="feature-content">
                         <h3>Pengumuman</h3>
-                        <a href="#" data-toggle="modal" data-target="#pengumuman"><u>SELENGKAPNYA >></u></a><br>
+                        <a href="#" data-toggle="modal" data-target="#publikasi">SELENGKAPNYA >></a><br>
                         <div class="alert alert-secondary" role="alert">
-                            <?php 
-                                $i = 0;
+                            <?php
+                            $i = 0;
                             ?>
                             @foreach ($publikasi as $publik)
-                            <div class="row">
-                                <div class="col-sm-8 text-left"><strong><?php echo strtoupper($publik->judul)?> | </strong>{{$publik->nama_desa}}</div>
-                            </div>
-                            <hr>
-                            "{{$publik->isi}}"
-                            <br><br><span style="float: right"><strong>-{{$publik->instansi}} </strong>/ <?php echo substr($publik->created_at, 0, 10)?></span><br>
-                            <hr>
-                            <?php 
-                                $i++
-                            ?>
-                            @if($i == 2)
+                                <div class="row">
+                                    <div class="col-sm-8 text-left"><strong><?php echo strtoupper($publik->judul); ?> |
+                                        </strong>{{ $publik->nama_desa }}</div>
+                                </div>
+                                <hr>
+                                "{{ $publik->isi }}"
+                                <br><br><span style="float: right"><strong>-{{ $publik->instansi }} </strong>/
+                                    <?php echo substr($publik->created_at, 0, 10); ?></span><br>
+                                <hr>
+                                <?php
+                                $i++;
+                                ?>
+                                @if ($i == 2)
                                 @break
                             @endif
                             @endforeach
@@ -131,53 +136,60 @@
 
 
 <!-- Modal Pengaduan -->
-<div class="modal fade" id="pengaduan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pengaduan</h5>
-      </div>
-      <div class="modal-body">
-      @foreach ($pengaduan as $aduan)
-        <div class="row">
-            <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek)?> | </strong>{{$aduan->instansi}}</div>
+<div class="modal fade" id="pengaduan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pengaduan</h5>
+            </div>
+            <div class="modal-body">
+                @foreach ($pengaduan as $aduan)
+                    <div class="row">
+                        <div class="col-sm-8 text-left"><strong><?php echo strtoupper($aduan->subjek); ?> | </strong>{{ $aduan->nama_desa }}
+                        </div>
+                    </div>
+                    <hr>
+                    "{{ $aduan->isi }}"
+                    <br><br><span style="float: right"><strong>-{{ $aduan->nama }} </strong>/
+                        <?php echo substr($aduan->created_at, 0, 10); ?></span><br>
+                    <hr>
+                @endforeach
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            </div>
         </div>
-        <hr>
-        "{{$aduan->isi}}"
-        <br><br><span style="float: right"><strong>-{{$aduan->nama}} </strong>/ <?php echo substr($aduan->created_at, 0, 10)?></span><br>
-        <hr>
-      @endforeach
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-      </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal Pengumuman -->
-<div class="modal fade" id="pengumuman" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pengumuman</h5>
-      </div>
-      <div class="modal-body">
-        @foreach ($publikasi as $publik)
-            <div class="row">
-                <div class="col-sm-8 text-left"><strong><?php echo strtoupper($publik->judul)?> | </strong>{{$publik->nama_desa}}</div>
+<div class="modal fade" id="publikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pengumuman</h5>
             </div>
-            <hr>
-            "{{$publik->isi}}"
-            <br><br><span style="float: right"><strong>-{{$publik->instansi}} </strong>/ <?php echo substr($publik->created_at, 0, 10)?></span><br>
-            <hr>
-            @endforeach
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-      </div>
+            <div class="modal-body">
+                @foreach ($publikasi as $publik)
+                    <div class="row">
+                        <div class="col-sm-8 text-left"><strong><?php echo strtoupper($publik->judul); ?> |
+                            </strong>{{ $publik->nama_desa }}
+                        </div>
+                    </div>
+                    <hr>
+                    "{{ $publik->isi }}"
+                    <br><br><span style="float: right"><strong>-{{ $publik->instansi }} </strong>/
+                        <?php echo substr($publik->created_at, 0, 10); ?></span><br>
+                    <hr>
+                @endforeach
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -196,7 +208,8 @@
                 <div class="feature-2">
                     <div class="media">
                         <div class="pull-left">
-                            <a href="www.siskeudes.online"><img src="/images/siskeudes.png" alt="" width="70px"></a>
+                            <a href="http://siskeudes.online" target="_blank"><img src="/images/siskeudes.png" alt=""
+                                    width="70px"></a>
                             <div class="border"></div>
                         </div>
                         <div class="media-body">
@@ -210,7 +223,8 @@
                 <div class="feature-2">
                     <div class="media">
                         <div class="pull-left">
-                            <a href="https://spanint.kemenkeu.go.id/"><img src="/images/omspan.png" alt="" width="70px"></a>
+                            <a href="https://spanint.kemenkeu.go.id/" target="_blank"><img src="/images/omspan.png"
+                                    alt="" width="70px"></a>
                             <div class="border"></div>
                         </div>
                         <div class="media-body">
@@ -220,12 +234,14 @@
                     </div>
                 </div>
             </div><!-- /.col-md-4 -->
-            
+
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="feature-2">
                     <div class="media">
                         <div class="pull-left">
-                            <a href="https://www.sipades.konsolidasi.info/26AsetDesaBinaPemdeskemendagriKm19_5u6D1r3kt0r4tF4s1lIt4s1K3U4ngAnd4nAS3tD3s4.php"><img src="/images/sipades.png" alt="" width="70px"></a>
+                            <a
+                                href="https://www.sipades.konsolidasi.info/26AsetDesaBinaPemdeskemendagriKm19_5u6D1r3kt0r4tF4s1lIt4s1K3U4ngAnd4nAS3tD3s4.php"><img
+                                    src="/images/sipades.png" target="_blank" alt="" width="70px"></a>
                             <div class="border"></div>
                         </div>
                         <div class="media-body">
@@ -245,137 +261,179 @@
 
 
 
-<!-- Start Pricing Table Section -->
-<div id="profil" class="pricing-section">
+<!-- Start Profil Desa Section -->
+<div class="pricing-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-12">
                     <div class="section-title text-center">
                         <h3>Profil Desa</h3>
-                        <a href="/list-desa"><u>List Desa >></u></a>
+                        <a href="/list-desa">Lihat Daftar Desa >></a>
                         <p class="white-text"></p>
                     </div>
                 </div>
             </div>
         </div>
         <br>
-        <div class="row">
+        <div class="row" id="profil">
             <div class="pricing">
-            @foreach ($desa as $d)
-                <div class="col-md-12">
-                    <div class="pricing-table">
-                        <div class="plan-name">
-                            <h3>{{$d->nama_desa}}</h3>
-                        </div>
-                        <div class="plan-list text-left">
-                            <ul>
-                                <li>Kecamatan: {{$d->kecamatan}}</li>
-                                <li>Kabupaten/Kota: {{$d->kota_kab}}</li>
-                                <li>Provinsi: {{$d->provinsi}}</li>
-                                <li>Kontak: {{$d->kontak}}</li>
-                                <li>Alamat: {{$d->alamat}}</li>
-                            </ul>
-                        </div>
-                        <div class="plan-signup">
-                            <a href="/profil/{{$d->id_desa}}" class="btn-system btn-small">Profil Lengkap</a>
+                @foreach ($desa as $d)
+                    <div class="col-md-12">
+                        <div class="pricing-table">
+                            <div class="plan-name">
+                                <h3>{{ $d->nama_desa }}</h3>
+                            </div>
+                            <div class="plan-list text-left">
+                                <ul>
+                                    <li>Kecamatan: {{ $d->kecamatan }}</li>
+                                    <li>Kabupaten/Kota: {{ $d->kota_kab }}</li>
+                                    <li>Provinsi: {{ $d->provinsi }}</li>
+                                    <li>Kontak: {{ $d->kontak }}</li>
+                                    <li>Alamat: {{ $d->alamat }}</li>
+                                </ul>
+                            </div>
+                            <div class="plan-signup">
+                                <a href="/profil/{{ $d->id_desa }}" class="btn-system btn-small">Profil Lengkap</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-            @endforeach
+                @endforeach
             </div>
         </div>
     </div>
 </div>
 
 
-<div class="container">
+<div class="container" id="form-aduan">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-title text-center">
+                <h3>Pengaduan</h3>
+                <p class="white-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row" <div class="col-lg-12">
+        <form name="aduan" id="contactForm" action="/insertAduan" method="POST">
+            @csrf
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title text-center">
-                        <h3>Pengaduan</h3>
-                        <p class="white-text"></p>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Pilih OPD:</p>
+                        <select name="instansi" id="" class="form-control @error('instansi') is-invalid @enderror"
+                            value="{{ old('instansi') }}">
+                            <option value="" disabled selected>--Pilih OPD--</option>
+                            @foreach ($desa as $d)
+                                <option value="{{ $d->id_desa }}">{{ $d->nama_desa }}</option>
+                            @endforeach
+                        </select>
+                        @error('instansi')
+                            <div id="instansi" class="invalid-feedback text-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Kategori</p>
+                        <select name="kategori" id="" class="form-control @error('kategori') is-invalid @enderror"
+                            value="{{ old('kategori') }}">
+                            <option value="" disabled selected>--Pilih Kategori--</option>
+                            <option value="Saran">Saran</option>
+                            <option value="Kritik">Kritik</option>
+                        </select>
+                        @error('kategori')
+                            <div id="kategori" class="invalid-feedback text-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Tag</p>
+                        <select name="tag" id="" class="form-control @error('tag') is-invalid @enderror"
+                            value="{{ old('tag') }}">
+                            <option value="" disabled selected>--Pilih Tag--</option>
+                            <option value="Pembangunan">Pembangunan</option>
+                            <option value="Pelayanan">Pelayanan</option>
+                        </select>
+                        @error('tag')
+                            <div id="tag" class="invalid-feedback text-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <form name="aduan" id="contactForm" action="/insertAduan" method="POST">
-                    @csrf
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <p class="help-block text-danger">Pilih OPD:</p>
-                                    <select required name="instansi" id="" class="form-control">
-                                        <option value="" disabled selected>--Pilih OPD--</option>
-                                        @foreach ($desa as $d)
-                                        <option value="{{$d->nama_desa}}">{{$d->nama_desa}}</option>
-                                        @endforeach
-                                    </select>
-                                    <p class="help-block text-danger"></p>
-                                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Nama Lengkap:</p>
+                        <input type="text" class="form-control @error('nama') is-invalid @enderror"
+                            value="{{ old('nama') }}" name="nama">
+                        @error('nama')
+                            <div id="nama" class="invalid-feedback text-danger">
+                                {{ $message }}
                             </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                <p class="help-block text-danger">Kategori</p>
-                                <select required name="kategori" id="" class="form-control">
-                                        <option value="" disabled selected>--Pilih Kategori--</option>
-                                        <option value="Saran">Saran</option>
-                                        <option value="Kritik">Kritik</option>
-                                    </select>
-                                </div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Email:</p>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror"
+                            value="{{ old('email') }}" name="email">
+                        @error('email')
+                            <div id="email" class="invalid-feedback text-danger">
+                                {{ $message }}
                             </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                <p class="help-block text-danger">Tag</p>
-                                <select required name="tag" id="" class="form-control">
-                                        <option value="" disabled selected>--Pilih Tag--</option>
-                                        <option value="Saran">Pembangunan</option>
-                                        <option value="Kritik">Pelayanan</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <p class="help-block text-danger">Nama Lengkap:</p>
-                                    <input required type="text" class="form-control" name="nama">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <p class="help-block text-danger">Email:</p>
-                                    <input required type="email" class="form-control" name="email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <p class="help-block text-danger">Subjek:</p>
-                                    <input required type="text" class="form-control" name="subjek">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <p class="help-block text-danger">Isi Aduan:</p>
-                                    <textarea required name="isi" id="" class="form-control" cols="30" rows="5"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <input type="submit" onclick="submit()" value="Kirim Aduan" style="float: right" name="lapor" class="btn btn-primary">
-                            </div>
-                        </div>
-                    </form>
+                        @enderror
+                    </div>
                 </div>
             </div>
-            <br><br>
-        </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Subjek:</p>
+                        <input type="text" class="form-control @error('subjek') is-invalid @enderror"
+                            value="{{ old('subjek') }}" name="subjek">
+                        @error('subjek')
+                            <div id="subjek" class="invalid-feedback text-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <p class="help-block text-danger">Isi Aduan:</p>
+                        <textarea name="isi" id="" class="form-control @error('isi') is-invalid @enderror"
+                            value="{{ old('isi') }}" cols="30" rows="5"></textarea>
+                        @error('isi')
+                            <div id="isi" class="invalid-feedback text-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="submit" onclick="submit()" value="Kirim Aduan" style="float: right" name="lapor"
+                        class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<br><br>
+</div>
 <!-- End Pricing Table Section -->
 @include('user.footer')

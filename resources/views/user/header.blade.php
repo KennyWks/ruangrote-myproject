@@ -29,8 +29,7 @@
     <!-- Custom CSS -->
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/color/light-red.css">
-
+    <link rel="stylesheet" type="text/css" href="/css/color/light-red.css">
 
 
     <!-- Custom Fonts -->

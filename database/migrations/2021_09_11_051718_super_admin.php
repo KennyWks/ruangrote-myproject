@@ -22,7 +22,8 @@ class SuperAdmin extends Migration
             $table->string('namaLengkap');
             $table->string('nomorTelepon')->unique();
             $table->string('roleId');
-            $table->string('id_desa');
+            $table->string('aktif');
+            $table->uuid('id_desa');
             $table->rememberToken();
             $table->timestamps();
         });

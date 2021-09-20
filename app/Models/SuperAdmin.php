@@ -35,4 +35,18 @@ class SuperAdmin extends Authenticatable {
     {
       return $this->password;
     }
+
+    public function isAdmin() {
+      if($this->roleId === '2'){
+        return true;
+      }
+      return false;
+    }
+
+   public function isDesa() {
+      if($this->roleId === '1'){
+        return true;
+      }
+      return false;
+    }
 }

@@ -12,18 +12,65 @@ use Illuminate\Support\Facades\DB;
 use App\Models\ProfilDesa;
 use App\Models\PublikasiDesa;
 use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
 
-class DesaController extends Controller
-{
-    public function __construct()
-    {
-        $this->middleware('auth');
-        $this->middleware('role:ROLE_ADMIN');
-    }
-
+class DesaController extends Controller {
     public function dashboard(){
+
+        $dokumen = DB::table('dokumen_desa')->where('id_desa', auth()->user()->id_desa)->get()->count();
+        $prokum = DB::table('produk_hukum')->where('id_desa', auth()->user()->id_desa)->get()->count();
+        $kegiatan = DB::table('kegiatan')->where('id_desa', auth()->user()->id_desa)->get()->count();
+        $pengaduan = DB::table('pengaduan')->where('instansi', auth()->user()->id_desa)->get()->count();
+
+        // pengaduan per bulan
+        $monthData1 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', date('n'))->get()->count();
+        $monthData2 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', intval(date('n') - 1))->get()->count();
+        $monthData3 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', intval(date('n') - 2))->get()->count();
+        $monthData4 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', intval(date('n') - 3))->get()->count();
+        $monthData5 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', intval(date('n') - 4))->get()->count();
+        $monthData6 = Pengaduan::where('instansi', auth()->user()->id_desa)->whereMonth('created_at', '=', intval(date('n') - 5))->get()->count();
+      
+        // pengaduan per hari
+        $date_array = array();
+        $i = 0;
+        while ($i < 7) {
+            $today = Carbon::today();
+            array_push($date_array, $today->subDays($i)->format('Y-m-d'));
+            $i++;
+        }
+
+        $days = [];
+        foreach($date_array as $date){            
+            $data = Pengaduan::where('instansi', auth()->user()->id_desa)->where(DB::raw("TO_DATE(to_char(created_at,'YYYY-MM-DD'),'YYYY-MM-DD') = to_timestamp('$date', 'YYYY-MM-DD')"))->get()->count();
+            array_push($days, "$data");
+        }
+
         return view('desa.dashboard', [
-            'active' => 'dashboard'
+            'active' => 'dashboard',
+            'dokumen' => $dokumen,
+            'prokum' => $prokum,
+            'kegiatan' => $kegiatan,
+            'pengaduan' => $pengaduan,
+            'monthData1' => $monthData1,
+            'monthData2' => $monthData2,
+            'monthData3' => $monthData3,
+            'monthData4' => $monthData4,
+            'monthData5' => $monthData5,
+            'monthData6' => $monthData6,
+            'labelDay1' => $date_array[0],
+            'labelDay2' => $date_array[1],
+            'labelDay3' => $date_array[2],
+            'labelDay4' => $date_array[3],
+            'labelDay5' => $date_array[4],
+            'labelDay6' => $date_array[5],
+            'labelDay7' => $date_array[6],
+            'dataDay1' => $days[0],
+            'dataDay2' => $days[1],
+            'dataDay3' => $days[2],
+            'dataDay4' => $days[3],
+            'dataDay5' => $days[4],
+            'dataDay6' => $days[5],
+            'dataDay7' => $days[6],
         ]);
     }
 
@@ -314,7 +361,7 @@ class DesaController extends Controller
         $messages = [
             'required' => 'Kolom :attribute wajib diisi.',
             'file' => 'File :attribute wajib dipilih.',
-            'max' => 'Ukuran file :attribute max 500 Kb.',
+            'max' => 'Ukuran file :attribute maksimal :size Kb.',
         ];
 
         $validator = Validator::make($input, $rules, $messages);

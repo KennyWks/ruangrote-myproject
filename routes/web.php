@@ -15,10 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'UserController@getIndex');
 Route::get('/desa', 'UserController@desa');
-Route::post('/insertAduan', 'UserController@insertAduan');
+Route::get('/profil/{id_desa}', 'UserController@profil');
 Route::get('/list-desa', 'UserController@listDesa');
+Route::post('/insertAduan', 'UserController@insertAduan');
 
-Route::prefix('desa')->group(function(){
+Route::get('/login', 'UserController@logIn')->name('login');
+Route::post('/signin', 'UserController@signIn');
+Route::get('/register', 'UserController@register');
+Route::post('/signup', 'UserController@signUp');
+Route::post('/logout', 'UserController@logout');
+
+Route::group(['middleware' => ['auth', 'desa'], 'prefix' => 'desa'], function () {
     Route::get('/dashboard', 'DesaController@dashboard');
    
     Route::get('/profil/{id_desa}', 'DesaController@dataDesa');
@@ -53,23 +60,21 @@ Route::prefix('desa')->group(function(){
     Route::post('/prokum/delete', 'DesaController@deleteProkum'); 
 });
 
-Route::get('/login', 'UserController@logIn')->name('login')->middleware('guest');
-Route::get('/register', 'UserController@register');
-Route::post('/signin', 'UserController@signIn');
-Route::post('/signup', 'UserController@signUp');
-Route::post('/logout', 'UserController@logout');
-
 //admin
-Route::prefix('admin')->group(function(){
+Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
     Route::get('/dashboard', 'AdminController@dashboard');
-
+    
     //Desa
+    Route::post('/detail', 'AdminController@detailAkun');
+    Route::post('/setAktif', 'AdminController@setAktif');
+    Route::get('/dashboard', 'AdminController@dashboard');
+    Route::get('/data-admin', 'AdminController@dataAkunAdmin');
     Route::get('/data-desa', 'AdminController@dataDesa');
     Route::post('/insertDesa', 'AdminController@insertDesa');
+    Route::post('/insertAkun', 'AdminController@insertAkun');
     Route::post('/updateDesa', 'AdminController@updateDesa');
-    Route::get('/deleteDesa/{id}', 'AdminController@deleteDesa');
-    Route::post('/passDesa', 'AdminController@passDesa');
-
-    //Dokumen
-    Route::get('/dokumen/{id}', 'AdminController@dokumen');
-
+    Route::post('/updateAkun', 'AdminController@updateAkun');
+    Route::post('/deleteDesa', 'AdminController@deleteDesa');
+    Route::post('/deleteAdmin', 'AdminController@deleteAdmin');
+    Route::post('/desa/detail', 'DesaController@detailDesa');
+});

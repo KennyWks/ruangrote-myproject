@@ -29,7 +29,7 @@
     <!-- Custom CSS -->
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/color/light-red.css">
+    <link rel="stylesheet" type="text/css" href="/css/color/light-red.css">
 
 
 
@@ -50,7 +50,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -76,7 +77,7 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="/#profil">Profil Desa</a>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -84,63 +85,67 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-<!--HEADER-->
+    <!--HEADER-->
 
-<div class="row" style="margin-top: 90px;">
-    <div class="col-md-12">
-        <div class="welcome-section text-center">
-            <h4>LIST DESA</h4>
-            <div class="border"></div>
-            <br><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Pencarian Nama...">
+    <div class="row" style="margin-top: 90px;">
+        <div class="col-md-12">
+            <div class="welcome-section text-center">
+                <h4>LIST DESA</h4>
+                <div class="border"></div>
+                <br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div style="margin-bottom: 20px;">
+                                <input type="text" class="form-control" id="myInput" onkeyup="myFunction()"
+                                    placeholder="Pencarian Nama...">
+                            </div>
 
-                        <table id="myTable" class="table table-responsive">
-                            <tr>
-                                <th>No</th>
-                                <th>Nama OPD</th>
-                                <th>Nama Kecamatan</th>
-                                <th></th>
-                            </tr>
-                            <?php $i=1?>
-                            @foreach ($list as $d)
-                            <tr>
-                                <td>{{$i++}}</td>
-                                <td>{{$d->nama_desa}}</td>
-                                <td>{{$d->kecamatan}}</td>
-                                <td><a href="/profil/{{$d->id_desa}}" class="btn btn-primary"><i class="fa fa-link"></i></a></td>
-                            </tr>
-                            @endforeach
-                        </table>
+                            <table id="myTable" class="table table-responsive">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama OPD</th>
+                                    <th>Nama Kecamatan</th>
+                                    <th></th>
+                                </tr>
+                                <?php $i = 1; ?>
+                                @foreach ($list as $d)
+                                    <tr>
+                                        <td>{{ $i++ }}</td>
+                                        <td>{{ $d->nama_desa }}</td>
+                                        <td>{{ $d->kecamatan }}</td>
+                                        <td><a href="/profil/{{ $d->id_desa }}" class="btn btn-primary"><i
+                                                    class="fa fa-link"></i></a></td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    function myFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
                 }
             }
         }
-    }
-</script>
+    </script>
 
 
-@include('user.footer')
+    @include('user.footer')

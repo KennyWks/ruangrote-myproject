@@ -54,7 +54,7 @@
                                                     @csrf
                                                     <input type="hidden" name="id" value="{{ $r->id_prokum }}">
                                                     <button class="btn btn-danger" type="submit"><i
-                                                            class="far fa-trash-alt"></i>
+                                                            class="far fa-trash-alt" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"></i>
                                                     </button>
                                                 </form>
                                             </div>

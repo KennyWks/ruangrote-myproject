@@ -7,6 +7,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 p {
     font-size: 13px;
@@ -2000,5 +2003,4 @@ iframe {
         -webkit-transform: scale(1.0);
       }
 }
-
 

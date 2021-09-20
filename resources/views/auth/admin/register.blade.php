@@ -13,7 +13,7 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input required maxlength="6" class="form-control @error('username') is-invalid @enderror" value="{{old('username')}}" id="username" name="username" type="text" placeholder="Masukan username anda"  autofocus />
+                                                        <input required minlength="6" class="form-control @error('username') is-invalid @enderror" value="{{old('username')}}" id="username" name="username" type="text" placeholder="Masukan username anda"  autofocus />
                                                         <label for="username">Username</label>
                                                         @error('username')
                                                         <div id="username" class="invalid-feedback">
@@ -52,20 +52,6 @@
                                                 </div>
                                                 @enderror
                                             </div>
-                                            <div class="form-group mb-3">
-                                                <select required class="form-control @error('roleId') is-invalid @enderror" value="{{old('roleId')}}" id="roleId" name="roleId">
-                                                  <option value="">Pilih Role</option>
-                                                  <option @if(old('roleId')) selected @endif
-                                                  value="2">Super Admin</option>
-                                                  <option @if(old('roleId')) selected @endif
-                                                  value="1">OPD</option>
-                                                </select>
-                                                @error('roleId')
-                                                <div id="roleId" class="invalid-feedback">
-                                                    {{$message}}
-                                                </div>
-                                                @enderror
-                                              </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
