@@ -1,6 +1,6 @@
 @include('user.header')
 
-<!-- Start Home Page Slider -->
+<!-- Start Beranda Section -->
 <br>
 <section id="page-top" style="margin-top: 80px;">
     <!-- Carousel -->
@@ -435,5 +435,5 @@
 </div>
 <br><br>
 </div>
-<!-- End Pricing Table Section -->
+<!-- End bearanda Section -->
 @include('user.footer')
