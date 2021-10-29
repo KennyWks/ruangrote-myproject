@@ -213,7 +213,7 @@ class DesaController extends Controller {
         $rules = [
             'id_desa' => 'required',
             'judul' => 'required',
-            'gambar' => 'file',
+            'gambar' => 'file|mimes:png,jpg,jpeg',
             'keterangan' => 'required',
         ];
 
@@ -338,13 +338,13 @@ class DesaController extends Controller {
 
         $rules = [
             'tahun' => 'required',
-            'rpjm' => 'required|file|max:500',
-            'rkp' => 'required|file|max:500',
-            'apbd' => 'required|file|max:500',
-            'pj_sm1' => 'required|file|max:500',
-            'pj_sm2' => 'required|file|max:500',
-            'kegiatan_prioritas' => 'required|file|max:500',
-            'peraturan' => 'required|file|max:500',
+            'rpjm' => 'required|file|mimes:pdf|max:500',
+            'rkp' => 'required|file|mimes:pdf|max:500',
+            'apbd' => 'required|file|mimes:pdf|max:500',
+            'pj_sm1' => 'required|file|mimes:pdf|max:500',
+            'pj_sm2' => 'required|file|mimes:pdf|max:500',
+            'kegiatan_prioritas' => 'required|file|mimes:pdf|max:500',
+            'peraturan' => 'required|file|mimes:pdf|max:500',
         ];
 
         $input = [
@@ -418,13 +418,13 @@ class DesaController extends Controller {
 
         $rules = [
             'tahun' => 'required',
-            'rpjm' => 'required|file|max:500',
-            'rkp' => 'required|file|max:500',
-            'apbd' => 'required|file|max:500',
-            'pj_sm1' => 'required|file|max:500',
-            'pj_sm2' => 'required|file|max:500',
-            'kegiatan_prioritas' => 'required|file|max:500',
-            'peraturan' => 'required|file|max:500',
+            'rpjm' => 'required|file|mimes:pdf|max:500',
+            'rkp' => 'required|file|mimes:pdf|max:500',
+            'apbd' => 'required|file|mimes:pdf|max:500',
+            'pj_sm1' => 'required|file|mimes:pdf|max:500',
+            'pj_sm2' => 'required|file|mimes:pdf|max:500',
+            'kegiatan_prioritas' => 'required|file|mimes:pdf|max:500',
+            'peraturan' => 'required|file|mimes:pdf|max:500',
         ];
 
         $input = [
@@ -509,7 +509,7 @@ class DesaController extends Controller {
     public function insertProkum(Request $request){
 
         $rules = [
-            'produk_hukum' => 'required|file|max:500',
+            'produk_hukum' => 'required|file|mimes:pdf|max:500',
         ];
 
         $input = [
@@ -549,7 +549,7 @@ class DesaController extends Controller {
     public function updateProkum(Request $request){
 
         $rules = [
-            'produk_hukum' => 'required|file|max:500',
+            'produk_hukum' => 'required|file|mimes:pdf|max:500',
         ];
 
         $input = [
